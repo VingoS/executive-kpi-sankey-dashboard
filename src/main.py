@@ -1,15 +1,20 @@
 # src/main.py
 from pathlib import Path
 from sankey_builder import build_sankey
+from data_loader import load_financial_data
 
 # -------------------------------------------------------------------------
 # Dados estáticos (requisitos da sprint)
 # -------------------------------------------------------------------------
-receita_bruta = 1000
-deducoes = 150
-custos = 400
-despesas_operacionais = 200
-resultado_financeiro = 50
+csv_file = Path("data") / "sample_dre.csv"
+
+financials = load_financial_data(csv_file)
+
+receita_bruta = financials["receita_bruta"]
+deducoes = financials["deducoes"]
+custos = financials["custos"]
+despesas_operacionais = financials["despesas_operacionais"]
+resultado_financeiro = financials["resultado_financeiro"]
 
 # -------------------------------------------------------------------------
 # Cálculo dos indicadores derivados

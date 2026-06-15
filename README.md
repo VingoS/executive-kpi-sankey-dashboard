@@ -1,5 +1,8 @@
 # Executive KPI Sankey Dashboard
 
+🔗 Live Demo:
+https://vingos.github.io/executive-kpi-sankey-dashboard/
+
 Visualização de indicadores financeiros e demonstrações de resultados através de gráficos Sankey interativos desenvolvidos em Python.
 
 ## Objetivo
